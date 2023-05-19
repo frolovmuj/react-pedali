@@ -36,7 +36,7 @@ const Card: React.FC<ICardProps> = ({ deleteFromFavorites, card, addToCart, remo
     return (
         <div className={styles.card}>
             <button className={styles.card__favorite}>
-                <img onClick={uniteToFavorites} src={card.favourite ? "/img/liked.svg" : "/img/unliked.svg"} alt="liked" />
+                <img onClick={uniteToFavorites} src={card.favourite ? "./img/liked.svg" : "./img/unliked.svg"} alt="liked" />
             </button>
 
             <img onClick={() => navigateToProduct(card.id)} className={styles.card__img} width={133} height={112} src={card.imgUrl} alt="sneakers" />
@@ -50,7 +50,7 @@ const Card: React.FC<ICardProps> = ({ deleteFromFavorites, card, addToCart, remo
                 <button onClick={() => {
                     uniteToCart()
                 }} className={styles.card__buttonToBasket}>
-                    <img src={card.inCart ? "/img/addedToCart.svg" : "/img/plusButton.svg"} alt="добавить в корзину" />
+                    <img src={card.inCart ? "./img/addedToCart.svg" : "/.img/plusButton.svg"} alt="добавить в корзину" />
                 </button>
             </div>
         </div>

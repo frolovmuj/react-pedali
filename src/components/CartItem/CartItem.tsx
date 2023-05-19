@@ -17,7 +17,7 @@ const CartItem: React.FC<ICartItemProps> = ({ cartItem, removeFromCart }) => {
                 <b>{cartItem.price.toLocaleString()} руб.</b>
             </div>
             <button onClick={() =>removeFromCart(cartItem.id)} className={styles.card__buttonIntoToBusket}>
-                <img src="/img/crossButton.svg" alt="remove" />
+                <img src="./img/crossButton.svg" alt="remove" />
             </button>
         </div>
     )
