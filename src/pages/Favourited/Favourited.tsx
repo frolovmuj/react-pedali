@@ -17,7 +17,7 @@ const Favourited: React.FC<IFavoritedProps> = ({ cartItems, addToFavorites, dele
       <section className={styles.content}>
         <div className={styles.content__heading}>
           <Link to='/'>
-            <img src="/img/back.svg" alt="back" />
+            <img src="./img/back.svg" alt="back" />
           </Link>
           <Title>Оценённые</Title>
         </div>
@@ -34,7 +34,7 @@ const Favourited: React.FC<IFavoritedProps> = ({ cartItems, addToFavorites, dele
             />
           ) : <div className={styles.content_empty}>
             <h1 className={styles.content_empty__title}>Оцените хоть одну пару кроссовок, чтобы увидеть их здесь</h1>
-            <Link to='/'>
+            <Link to='/react-pedali'>
               <Button>Вернутсья на главную</Button>
             </Link>
           </div>}

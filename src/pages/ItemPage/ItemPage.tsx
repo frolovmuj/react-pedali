@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom'
 import { CardModel } from '../../models/CardModel'
 import { SneakersService } from '../../services/sneakers.service'
 import Button from '../../components/ui/Button/ButtonGreen'
-import PreloadItemPage from '../../components/PreloadCa/PreloadItemPage'
+import PreloadItemPage from '../../components/PreloadItemPage/PreloadItemPage'
 
 
 interface IItemPageProps {

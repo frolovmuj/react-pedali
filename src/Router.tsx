@@ -33,7 +33,7 @@ const Router: React.FC<RouterProps> = ({ addToCart, cartIsOpen, cartIsCheckout, 
       {cartIsOpen ? <Drawer cartIsCheckout={cartIsCheckout} checkoutHistory={checkoutHistory} tax={tax} totalPrice={totalPrice} removeFromCart={removeFromCart} cartItems={cartItems} closeCart={closeCart} /> : null}
       <Header tax={tax} totalPrice={totalPrice} openCart={openCart} />
       <Routes>
-        <Route path="/" element={<Home
+        <Route path="/react-pedali" element={<Home
           cards={cards}
           cartItems={cartItems}
           addToFavorites={addToFavorites}

@@ -15,7 +15,7 @@ const Profile: React.FC<IProfileProps> = ({ sentCards }) => {
         <section className={styles.content}>
             <div className={styles.content__heading}>
                 <Link to='/'>
-                    <img src="/img/back.svg" alt="back" />
+                    <img src="./img/back.svg" alt="back" />
                 </Link>
                 <Title>Архив покупок</Title>
             </div>
@@ -27,7 +27,7 @@ const Profile: React.FC<IProfileProps> = ({ sentCards }) => {
                 }) :
                     <div className={styles.content_empty}>
                         <h1 className={styles.content_empty__title}>Оформите хотя бы один заказ, чтобы посмотреть историю покупок</h1>
-                        <Link to='/'>
+                        <Link to='/react-pedali'>
                             <Button>Вернутсья к покупкам</Button>
                         </Link>
                     </div>}

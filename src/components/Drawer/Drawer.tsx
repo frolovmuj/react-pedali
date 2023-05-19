@@ -23,7 +23,7 @@ const Drawer: React.FC<IDrawerProps> = ({ cartIsCheckout, tax, checkoutHistory, 
                     <>
                         <h2 className={styles.drawer__title}>
                             <span>Корзина</span>
-                            <img onClick={closeCart} src="/img/crossButton.svg" alt="Close basket" />
+                            <img onClick={closeCart} src="./img/crossButton.svg" alt="Close basket" />
                         </h2>
                         <div className={styles.cards}>
                             {cartItems.map((cartItem) => <CartItem key={cartItem.id} removeFromCart={removeFromCart} cartItem={cartItem} />)}
@@ -51,7 +51,7 @@ const Drawer: React.FC<IDrawerProps> = ({ cartIsCheckout, tax, checkoutHistory, 
                     </>
                     : cartIsCheckout ?
                         <div className={styles.drawer_bought}>
-                            <img src="/img/cartIsBought.jpg" alt="cartIsBought" />
+                            <img src="./img/cartIsBought.jpg" alt="cartIsBought" />
                             <h2>
                                 Заказ оформлен и будет доставлен в ближайшее время!
                             </h2>
@@ -60,7 +60,7 @@ const Drawer: React.FC<IDrawerProps> = ({ cartIsCheckout, tax, checkoutHistory, 
                         </div> :
                         <div className={styles.drawer_empty}>
                             <h2> Корзина Пуста</h2>
-                            <img width={250} height={250} src="/img/box.jpg" alt="box" />
+                            <img width={250} height={250} src="./img/box.jpg" alt="box" />
                             <h3 >Похоже что ваша корзина пуста :(</h3>
                             <Button closeCart={closeCart}> Выйти с корзины </Button>
                         </div>
