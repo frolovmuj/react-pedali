@@ -11,7 +11,7 @@ const Header: React.FC<IHeaderProps> = ({ openCart, tax, totalPrice }) => {
     return (
         <header className={styles.header}>
             <div className={styles.header__left}>
-                <Link to="/">
+                <Link to="/react-pedali">
                     <img src="./img/logo.png" alt="logo" />
                     <div className={styles.header__leftText}>
                         <h2>Pedali Gonka</h2>

@@ -50,7 +50,7 @@ const Card: React.FC<ICardProps> = ({ deleteFromFavorites, card, addToCart, remo
                 <button onClick={() => {
                     uniteToCart()
                 }} className={styles.card__buttonToBasket}>
-                    <img src={card.inCart ? "./img/addedToCart.svg" : "/.img/plusButton.svg"} alt="добавить в корзину" />
+                    <img src={card.inCart ? "./img/addedToCart.svg" : "./img/plusButton.svg"} alt="добавить в корзину" />
                 </button>
             </div>
         </div>

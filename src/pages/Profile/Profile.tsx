@@ -14,7 +14,7 @@ const Profile: React.FC<IProfileProps> = ({ sentCards }) => {
     return (
         <section className={styles.content}>
             <div className={styles.content__heading}>
-                <Link to='/'>
+                <Link to='/react-pedali'>
                     <img src="./img/back.svg" alt="back" />
                 </Link>
                 <Title>Архив покупок</Title>

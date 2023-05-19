@@ -16,7 +16,7 @@ const Favourited: React.FC<IFavoritedProps> = ({ cartItems, addToFavorites, dele
     <>
       <section className={styles.content}>
         <div className={styles.content__heading}>
-          <Link to='/'>
+          <Link to='/react-pedali'>
             <img src="./img/back.svg" alt="back" />
           </Link>
           <Title>Оценённые</Title>
