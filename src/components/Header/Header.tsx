@@ -12,7 +12,7 @@ const Header: React.FC<IHeaderProps> = ({ openCart, tax, totalPrice }) => {
         <header className={styles.header}>
             <div className={styles.header__left}>
                 <Link to="/">
-                    <img src="/img/logo.png" alt="logo" />
+                    <img src="./img/logo.png" alt="logo" />
                     <div className={styles.header__leftText}>
                         <h2>Pedali Gonka</h2>
                         <p>Магазин кроссовок</p>
