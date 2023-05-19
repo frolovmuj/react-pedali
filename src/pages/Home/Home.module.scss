@@ -1,0 +1,46 @@
+.content {
+    padding: 40px;
+    &__heading {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+      margin-bottom: 30px;
+      .seacrh {
+        border: 1px solid #f3f3f3;
+        border-radius: 10px;
+        padding: 18px 18px 14px 18px;
+        display: flex;
+        position: relative;
+        @media (max-width:470px) {
+          width: 100%;
+        }
+        &:focus-within{
+          box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.05);
+        }
+        svg {
+          margin-right: 13px;
+        }
+        img{
+          position: absolute;
+          right: 10px;
+          bottom: 5px;
+          cursor: pointer;
+        }
+        input{
+          @media (max-width:470px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-items: center;
+      gap: 40px;
+    }
+  }

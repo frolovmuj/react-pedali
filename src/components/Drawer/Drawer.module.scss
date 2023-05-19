@@ -1,0 +1,122 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #00000080;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+.drawer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 418px;
+  height: 100%;
+  right: 0;
+  opacity: 100;
+  z-index: 100;
+  background: #ffffff;
+  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  .drawer_empty {
+    h2 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+      margin-bottom: 18vh;
+      @media screen and (max-height: 650px) {
+        margin-bottom: 5vh;
+      }
+    }
+    img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+    h3 {
+      font-weight: 900;
+      font-size: 24px;
+      text-align: center;
+      line-height: 29px;
+      color: #000000;
+      margin-bottom: 50px;
+    }
+    button {
+      width: 100%;
+    }
+  }
+  .drawer_bought{
+    img{
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 35px;
+      display: block;
+    }
+    h2 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      color: #9dd558;
+      text-align: center;
+      margin-bottom: 2vh;
+    }
+    p{
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    button {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #9dd558;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      cursor: pointer;
+      border-radius: 8px;
+      transition: box-shadow 0.3s;
+      &:hover {
+        box-shadow: 3px 2px 14px -2.6px;
+      }
+    }
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+    overflow: auto;
+    margin-bottom: 20px;
+  }
+  &__total {
+    .drawer__descritionList {
+      display: flex;
+      flex-direction: column;
+      gap: 19px 0;
+      margin-bottom: 24px;
+      .drawer__descritionItem {
+        display: flex;
+        gap: 0 9px;
+        .lineDot {
+          width: 167px;
+          height: 1px;
+          border: 1px dashed #dfdfdf;
+          margin-top: 14px;
+        }
+      }
+    }
+    button {
+      width: 100%;
+    }
+  }
+}
