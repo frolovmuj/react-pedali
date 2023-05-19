@@ -27,7 +27,7 @@ const Profile: React.FC<IProfileProps> = ({ sentCards }) => {
                 }) :
                     <div className={styles.content_empty}>
                         <h1 className={styles.content_empty__title}>Оформите хотя бы один заказ, чтобы посмотреть историю покупок</h1>
-                        <Link to='/react-pedali'>
+                        <Link to='/react-pedali/'>
                             <Button>Вернутсья к покупкам</Button>
                         </Link>
                     </div>}
